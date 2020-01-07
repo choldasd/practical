@@ -1,72 +1,77 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# PracticalTest
+To run project -
+Create DB name as "practical" 
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+DB Schema - 
+php artisan migrate 
+php artisan db:seed
 
-## About Laravel
+On local -
+Company - 
+https://localhost/practical
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Admin - 
+https://localhost/practical/admin
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Username - applocumadmin@yopmail.com
+Password - Password@123
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+Basic Laravel Auth: ability to log in as an administrator
+• Admin can perform CRUD Operation (Create / Read / Update / Delete) for
+Companies and Employees
+ - Done
+• Companies will have their own login and can not see other companies details.
+ - Done
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+• Basically, there will be one portal in which Admin and Companies can log in. If Admin
+will log in, He/she can manage all the companies and all its employees and can do CRUD.
+If Companies will log in, It can manage all its employees and can do CRUD on it.
+ - Done
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+• Use database seeds to create the first user with email applocumadmin@yopmail.com
+and password “Password@123”
+ - Done
 
-## Laravel Sponsors
+• Normal Email Regex validation and Password validations will be such that password
+must contain at least one uppercase, one lowercase and one symbol with at least 8
+characters
+ - Done
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+• CRUD functionality (Create / Read / Update / Delete) for two menu items: Companies
+and Employees using JQuery AJAX.
+ - Done
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+• Create update feature using Ajax with the popup.
+ - Done
 
-## Contributing
+• Email notification: send email to admin email whenever a new company is entered.
+ - Done. commented code in Admin/CompanyController.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+• Companies DB table consists of these fields: Name (Required), email(Required), logo
+(minimum 100×100), website
+ - Done
 
-## Security Vulnerabilities
+• Employees DB table consists of these fields: Full name (required), Company (foreign key
+to Companies), email(Required), phone(Required)
+ - Done
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+• Use database migrations to create those schemas above
+ - Done
 
-## License
+• Store companies logos in storage/app/public folder and make them accessible from
+public
+ - Done
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+• Use basic Laravel resource controllers with default methods – index, create, store etc.
+ - Done
+
+• Use Laravel’s validation function, using Request classes
+ - Remaining. I tried but unable to get correct json to show error message on page.
+
+• Use Laravel’s pagination for showing Companies/Employees list, 10 entries per page.
+- Done.
+
+• Use Laravel make:auth as default Bootstrap-based design theme, but remove the ability
+to register
+- Done.
