@@ -4,8 +4,7 @@ To run project -
 Create DB name as "practical" 
 
 DB Schema - 
-php artisan migrate
-php artisan db:seed
+php artisan migrate and php artisan db:seed
 
 On local -
 Company -
