@@ -40,8 +40,7 @@ and Employees using JQuery AJAX.- Done
 
 7. Create update feature using Ajax with the popup. - Done
 
-8. Email notification: send email to admin email whenever a new company is entered.
- - Done. commented code in Admin/CompanyController.
+8. Email notification: send email to admin email whenever a new company is entered. - Done. commented code in Admin/CompanyController.
 
 9. Companies DB table consists of these fields: Name (Required), email(Required), logo
 (minimum 100×100), website - Done
@@ -56,8 +55,7 @@ public- Done
 
 13. Use basic Laravel resource controllers with default methods – index, create, store etc. - Done
 
-14. Use Laravel’s validation function, using Request classes
- - Remaining. I tried but unable to get correct json to show error message on page.
+14. Use Laravel’s validation function, using Request classes. - Remaining. I tried but unable to get correct json to show error message on page.
 
 15. Use Laravel’s pagination for showing Companies/Employees list, 10 entries per page. - Done.
 
